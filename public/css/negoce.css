@@ -1,0 +1,273 @@
+/* negoce.css */
+
+
+
+/* Bens Negoce */
+
+#devis-negoce-form .form-group-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#devis-negoce-form .form-group-checkbox input[type="checkbox"] {
+    width: auto;
+    height: 18px;
+    accent-color: var(--primary-color);
+}
+
+#devis-quality-options h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.quality-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.quality-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.quality-group input[type="radio"] {
+    accent-color: var(--primary-color);
+}
+
+.container{
+    max-width: 1900px;
+    padding: 0 20px;
+}
+.bensNegoce h3{
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.bensNegoceDescript{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.bensNegoceDescript{
+    margin-top: 80px;
+}
+
+.bensNegoceDescript h3{
+    font-size: 2rem;
+    margin: 5px;
+    color: var(--primary-color);
+}
+
+.bensNegoce{
+    width: 100vw;
+}
+
+.descrip1{
+    margin-bottom: 20px;
+}
+
+.bensNegoce .market{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.MargetIntro{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.market .cadreM{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cadreM img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cadreM .info{
+    position: absolute;
+    bottom: 8px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 20px;
+    height: 190px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.info .caracteristiques{
+    /* on aligne deux sur une meme ligne */
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    text-align: left;
+}
+
+
+
+.info .caracteristiques .block{
+    min-width: 45%;
+}
+
+.info .caracteristiques .caracteristique{
+    display: flex;
+    align-items: center;
+}
+
+.pointsOption{
+    width: 7px;
+    height: 7px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.cta-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+.caracteristiques {
+    display: none; /* Hiding this as it seems to be placeholder content */
+}
+
+.cta-button-container {
+    margin-top: auto;
+}
+
+/* Section Garantie - Modern Styling */
+.garantie-section {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* A light grey background to separate the section */
+}
+
+.garantie-section .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.garantie-section .container .illustration {
+    
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.garantie-section .container .illustration img {
+    max-width: 650px;
+    max-height: 650px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.garantie-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.garantie-text {
+    /* flex: 1.2; */
+    min-width: 300px;
+}
+
+.garantie-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.garantie-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.garantie-list {
+    /* flex: 1; */
+    min-width: 300px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.garantie-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.garantie-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.garantie-list li:last-child {
+    margin-bottom: 0;
+}
+
+.garantie-list .fa-check-circle {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .garantie-content {
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .garantie-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}

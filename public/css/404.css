@@ -1,0 +1,164 @@
+/* /public/css/404.css */
+
+/* --- KEYFRAMES POUR LES ANIMATIONS --- */
+
+/* Animation pour le fond en dégradé */
+@keyframes animated-gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Animation pour faire flotter le conteneur */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Animation pour faire "glisser vers le haut" les éléments */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de "glitch" et lueur pour le code 404 */
+@keyframes glitch {
+    2%, 64% { transform: translate(2px, 0) skew(0deg); }
+    4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+    62% { transform: translate(0, 0) skew(5deg); }
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--primary-color), 0 0 20px var(--primary-color);
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px var(--sombre-primary-color), 0 0 25px var(--sombre-primary-color);
+    }
+}
+
+
+/* --- STYLES DES ÉLÉMENTS --- */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--secondary-color);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif; /* Police plus moderne pour l'ensemble */
+    
+    /* Fond animé */
+    background: linear-gradient(-45deg, #f8f9fa, #e9ecef, #f8f9fa, #dee2e6);
+    background-size: 400% 400%;
+    animation: animated-gradient 15s ease infinite;
+}
+
+.error-container {
+    max-width: 650px;
+    padding: 50px;
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0,0,0,0.05);
+    
+    /* Animation de flottement */
+    animation: float 6s ease-in-out infinite;
+    
+    /* Effet 3D au survol */
+    transition: transform 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+.error-container:hover {
+    transform: translateY(-5px) scale(1.02) rotateX(5deg) rotateY(-5deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.error-code {
+    font-size: 12rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 20px;
+    position: relative;
+    
+    /* Animations combinées */
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Effet de glitch avec des pseudo-éléments */
+.error-code::before,
+.error-code::after {
+    content: '404';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-color);
+    overflow: hidden;
+}
+
+.error-code::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--sombre-primary-color);
+    animation: glitch 3s infinite linear alternate-reverse;
+}
+
+.error-code::after {
+    left: -2px;
+    text-shadow: -2px 0 #4cc9f0, 2px 2px #f72585; /* Couleurs vives pour le glitch */
+    animation: glitch 2s infinite linear alternate-reverse;
+}
+
+
+.error-title,
+.error-message,
+.btn-home {
+    /* Préparation pour l'animation d'apparition */
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.error-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--sombre-primary-color);
+    animation-delay: 0.2s; /* Apparition décalée */
+}
+
+.error-message {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+    animation-delay: 0.4s; /* Apparition décalée */
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(169, 5, 5, 0.3);
+    transition: all 0.3s ease;
+    animation-delay: 0.6s; /* Apparition décalée */
+}
+
+.btn-home:hover {
+    background-color: var(--sombre-primary-color);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(121, 3, 3, 0.4);
+}

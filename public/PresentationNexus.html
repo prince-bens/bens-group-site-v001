@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bens Nexus - Votre Nouvelle Plateforme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/nexus.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/chatbot.css">
+    <link rel="stylesheet" href="css/chargement.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+        <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Discuter avec l'assistant</h3>
+            <span id="close-chatbot" class="close-chatbot">&times;</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">Bonjour ! Je suis l'assistant de Bens Groupe. Comment puis-je vous aider ?</div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="user-input" placeholder="Posez votre question...">
+            <button id="send-btn">Envoyer</button>
+        </div>
+    </div>
+        <div id="tracking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Identifier votre livraison</h2>
+            <p>Veuillez entrer les informations ci-dessous pour commencer le suivi.</p>
+            <form id="tracking-form">
+                <div class="form-group">
+                    <label for="order-id">Numéro de commande</label>
+                    <input type="text" id="order-id" name="order-id" placeholder="Ex: A2B4-5678" required>
+                </div>
+                <button type="submit"  class="cta-button">Afficher sur la carte</button>
+                <div id="spinner" class="hidden">
+                    <div class="spinner"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="chatbot_icon" id="chatbot_icon">
+        <img src="./assets/svg/chat_icon.svg" alt="">
+    </div>
+    <div class="navbar-placeholder" id="navbar-placeholder">
+        <!-- La barre de navigation sera insérée ici par JavaScript -->
+    </div>
+    <header>
+        
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                
+                <div class="hero-content">
+                    <h1>BENS NEXUS — Le digital au service du transport</h1>
+                    <p>
+                        BENS NEXUS est la plateforme digitale développée par BENS GROUPE pour offrir à ses clients une logistique moderne, transparente et connectée.
+                    </p>
+                    <a href="./dashboard" class="cta-button">Commencer Maintenant</a>
+                </div>
+
+                <div class="hero-devices">
+                    <div class="device device-desktop">
+                        <div class="screen desktop-screen">
+                            
+                        </div>
+                    </div>
+                    <div class="device device-mobile">
+                         <div class="screen mobile-screen">
+                            
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Section Introduction -->
+        <section id="introduction" class="introduction">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Bien plus qu'un simple outil de suivi</h2>
+                </div>
+                <div class="intro-content">
+                    
+                    <p>
+                        c'est un pont entre le terrain et le client, conçu pour renforcer la réactivité, la communication et la confiance dans chaque mission de transport.
+                    </p>
+                    <p>
+                        Chez BENS GROUPE, la technologie est au service de la logistique.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Pourquoi Bens Nexus -->
+        <section id="pourquoi" class="pourquoi">
+            <div class="container">
+                <div class="section-title">
+                    <h2>1. Pourquoi BENS NEXUS ?</h2>
+                </div>
+                <div class="pourquoi-content">
+                    <p>
+                        Dans un environnement logistique où la visibilité et la transparence sont devenues indispensables, BENS NEXUS a été conçu pour offrir à nos clients une vision claire et complète de leurs opérations.
+                    </p>
+                    <p>
+                        Cette plateforme permet de :
+                    </p>
+                    
+                    <div class="benefits">
+                        <div class="benefit">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Suivre chaque mission en temps réel</h3>
+                            <p>Visualisez l'avancement de vos opérations à chaque étape</p>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-comments"></i>
+                            <h3>Communiquer facilement avec nos équipes</h3>
+                            <p>Échangez en direct avec nos responsables de mission</p>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>Partager les documents clés</h3>
+                            <p>Transmettez et recevez vos documents en toute sécurité</p>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        Grâce à BENS NEXUS, chaque opération devient plus fluide, plus traçable et mieux maîtrisée, du lieu de chargement à la livraison finale.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Fonctionnalités -->
+        <section id="fonctionnalites" class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>2. Fonctionnalités clés</h2>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-satellite-dish"></i> 2.1 Suivi en temps réel</h3>
+                        <p>Chaque mission est géolocalisée grâce au suivi GPS intégré. Les clients peuvent visualiser l'avancement des opérations, recevoir des alertes automatiques et être informés des délais en toute transparence.</p>
+                        <ul>
+                            <li>Visualisation des trajets en direct</li>
+                            <li>Notifications de statut (chargement, départ, arrivée…)</li>
+                            <li>Alertes automatiques en cas d'imprévu</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><i class="fas fa-comment-dots"></i> 2.2 Communication centralisée</h3>
+                        <p>BENS NEXUS simplifie la communication entre le client, les équipes BENS et les transporteurs partenaires. Tous les échanges — messages, documents, photos — sont regroupés au même endroit pour un suivi clair et rapide.</p>
+                        <ul>
+                            <li>Échange de documents (BL, factures, preuves de livraison…)</li>
+                            <li>Historique des échanges et suivi des actions</li>
+                            <li>Collaboration fluide et traçable</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><i class="fas fa-shield-alt"></i> 2.3 Traçabilité et sécurité documentaire</h3>
+                        <p>Tous les documents liés à vos missions sont archivés automatiquement et accessibles à tout moment. Plus besoin de rechercher un mail ou un fichier : tout est centralisé, organisé et sécurisé.</p>
+                        <ul>
+                            <li>Archivage automatique des documents de transport</li>
+                            <li>Accès partagé et sécurisé pour chaque client</li>
+                            <li>Historique complet des opérations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Mise en relation -->
+        <section id="relation" class="relation">
+            <div class="container">
+                <div class="section-title">
+                    <h2>3. Une mise en relation maîtrisée</h2>
+                </div>
+                <div class="relation-content">
+                    <p>
+                        BENS NEXUS facilite la mise en relation entre les clients et les transporteurs, tout en gardant le contrôle opérationnel entre les mains de l'équipe BENS GROUPE.
+                    </p>
+                    <p>
+                        Chaque mission reste supervisée par nos responsables, garantissant un service cohérent, fiable et humain.
+                    </p>
+                    <p style="font-style: italic; margin-top: 2rem;">
+                        Le digital au service d'un lien humain fort : c'est ça, BENS NEXUS.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Notre promesse -->
+        <section id="promesse" class="promesse">
+            <div class="container">
+                <div class="section-title">
+                    <h2>4. Notre promesse digitale</h2>
+                </div>
+                <div class="promesse-content">
+                    <p>
+                        Avec BENS NEXUS, nous faisons le choix d'une technologie utile, simple et au service du client.
+                    </p>
+                    <p>
+                        Elle ne remplace pas le savoir-faire humain : elle le renforce, en donnant à nos équipes et à nos clients les moyens d'agir plus vite, plus sereinement et plus efficacement.
+                    </p>
+                    
+                    <div class="values">
+                        <div class="value">
+                            <i class="fas fa-eye"></i>
+                            <div class="value-text">
+                                <h4>Transparence</h4>
+                                <p>Vous savez toujours où en est votre marchandise.</p>
+                            </div>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-bolt"></i>
+                            <div class="value-text">
+                                <h4>Proactivité</h4>
+                                <p>Chaque besoin est anticipé et chaque imprévu traité sans délai.</p>
+                            </div>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-lock"></i>
+                            <div class="value-text">
+                                <h4>Fiabilité</h4>
+                                <p>Vos données et documents sont centralisés et sécurisés.</p>
+                            </div>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-cogs"></i>
+                            <div class="value-text">
+                                <h4>Innovation</h4>
+                                <p>La technologie au service de la logistique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p style="text-align: center; margin-top: 2rem; font-weight: bold; font-size: 1.2rem;">
+                        BENS NEXUS : la technologie au service de la logistique.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+     <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BENS GROUPE</h3>
+                    <p>Votre partenaire Transport & Négoc e BTP entre Dakar et Bamako.</p>
+                    <p>Le sens du service, notre engagement au quotidien.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Bensgroupes/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://sn.linkedin.com/company/bens-groupe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <a href="transport-logistique.html">Transport de conteneurs</a> 
+                        <br><a href="transport-logistique.html">Transport sous douane</a> 
+                        <br><a href="transport-logistique.html">Logistique export</a> 
+                        <br><a href="negoce-materiaux.html">Négoce matériaux BTP</a>
+                        <br><a href="transport-logistique.html">Coordination logistique</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <a href="index.html">Accueil</a> 
+                        <br><a href="transport-logistique.html">Services</a> 
+                        <br><a href="a-propos.html">À Propos</a> 
+                        <br><a href="index.html#clients">Clients</a> 
+                        <br><a href="index.html#contact-us">Contact</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i> <span>Mamelles BP 24511<br>Ouakam – SÉNÉGAL</span> 
+                        <br><i class="fas fa-phone"></i><a href="tel:+221331234567"><span>+221 33 123 45 67</span></a>  
+                        <br><i class="fab fa-whatsapp"></i><a href="https://wa.me/221766001902" target="_blank"><span>+221 76 600 19 02</span></a>  
+                        <br><i class="fas fa-envelope"></i><a href="mailto:contact@bensgroupe.com"><span>contact@bensgroupe.com</span></a>  
+                        <br><i class="fas fa-clock"></i> <span>Lun-Ven: 8h-18h</span> 
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 BENS GROUPE. Tous droits réservés. </p>
+                <p><a href="./mention.html" target="_blank" rel="noopener noreferrer">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS for the map --> 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    <script src="./js/navbar.js"></script>
+    <!-- Firebase Init via Backend -->
+    <!-- <script src="js/googleAna.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="js/formulaireLogique.js" type="module"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/recaptcha-loader.js" defer></script>
+<script>
+    // Attend que le contenu de la page soit entièrement chargé
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Sélectionne le bouton "Commencer Maintenant"
+        const ctaButton = document.querySelector('.cta-button');
+
+        if (ctaButton) {
+            // Ajoute un écouteur d'événement au clic
+            ctaButton.addEventListener('click', (event) => {
+                
+                // Empêche le lien de suivre le '#' (comportement par défaut)
+                event.preventDefault(); 
+                
+                // Affiche une simple alerte (vous pouvez changer cela)
+                alert('Merci de votre intérêt pour Bens Nexus ! Notre équipe vous contactera rapidement.');
+                
+                // Vous pourriez aussi faire défiler vers une section :
+                // document.querySelector('#decouvrir').scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        // Animation pour les sections lorsqu'elles apparaissent à l'écran
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Appliquer l'animation aux sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        console.log("Bens Nexus est prêt !");
+    });
+</script>
+</body>
+</html>

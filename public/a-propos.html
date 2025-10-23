@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - BENS Groupe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/apropos.css">
+    <link rel="stylesheet" href="./css/stats.css">
+    <link rel="stylesheet" href="./css/chatbot.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/chargement.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for the map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/general.css">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="À Propos de BENS Groupe - Transport & Logistique au Sénégal" />
+    <meta name="description" content="BENS Groupe, PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction (ciment, fer à béton, gravier). Devis en moins de 24h." />
+    <meta name="keywords" content="transport Sénégal, transport Dakar Bamako, logistique Dakar, matériaux construction Sénégal, BENS Groupe, transport routier, commerce matériaux, ciment Sénégal, fer à béton, gravier, BTP Sénégal, transport conteneurs, transport conditionné" />
+    <meta name="author" content="BENS Groupe" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="SN" />
+    <meta name="geo.placename" content="Dakar, Sénégal" />
+    <meta name="geo.position" content="14.6928;-17.4467" />
+    <meta name="ICBM" content="14.6928, -17.4467" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bens-groupe.com/a-propos.html" />
+    <meta property="og:title" content="À Propos de BENS Groupe - Transport & Logistique au Sénégal" />
+    <meta property="og:description" content="PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction. Devis en moins de 24h." />
+    <meta property="og:image" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="BENS Groupe - Transport et logistique au Sénégal" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:secure_url" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="og:site_name" content="BENS Groupe" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bens-groupe.com/a-propos.html" />
+    <meta property="twitter:title" content="À Propos de BENS Groupe - Transport & Logistique au Sénégal" />
+    <meta property="twitter:description" content="PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction. Devis en moins de 24h." />
+    <meta property="twitter:image" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="twitter:image:alt" content="BENS Groupe - Transport et logistique au Sénégal" />
+    <meta property="twitter:creator" content="@bensgroupe" />
+    <meta property="twitter:site" content="@bensgroupe" />
+    
+    <!-- LinkedIn -->
+    <meta property="og:image:secure_url" content="./assets/image/Preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    
+    <!-- WhatsApp -->
+    <meta property="og:image:secure_url" content="./assets/image/Preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    
+    <!-- Additional SEO Tags -->
+    <meta name="theme-color" content="#fff" />
+    <meta name="msapplication-TileColor" content="#a90505" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bens-groupe.com/a-propos.html" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="fr" href="https://bens-groupe.com/" />
+    <link rel="alternate" hreflang="fr-sn" href="https://bens-groupe.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://bens-groupe.com/" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/svg/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/svg/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/svg/favicon.svg" color="#a90505" />
+    <meta name="msapplication-TileImage" content="./assets/svg/favicon.svg" />
+    
+</head>
+<body>
+    <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Discuter avec l'assistant</h3>
+            <span id="close-chatbot" class="close-chatbot">&times;</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">Bonjour ! Je suis l'assistant de Bens Groupe. Comment puis-je vous aider ?</div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="user-input" placeholder="Posez votre question...">
+            <button id="send-btn">Envoyer</button>
+        </div>
+    </div>
+    <div class="chatbot_icon" id="chatbot_icon">
+        <img src="./assets/svg/chat_icon.svg" alt="">
+    </div>
+
+    <!-- navbar -->
+    <div class="navbar-placeholder" id="navbar-placeholder">
+        <!-- La barre de navigation sera insérée ici par JavaScript -->
+    </div>
+    <main>
+        <section class="apropos" id="apropos">
+            <div class="enteteApropos">
+                <div class="filtre"></div>
+                <img src="./assets/image/startup-594090_1920.jpg" alt="" class="backApropos">
+                <h1 class="">À Propos de BENS GROUPE</h1>
+                <span class="bar2"></span>
+            </div> 
+            <div class="qui-sommes-nous">
+                <div class="overlay"></div>
+                <div class="container">
+                    <!-- Fenêtre Modale de Confirmation de Devis -->
+                    <div id="devis-confirmation-modal" class="modal">
+                        <div class="modal-content" style="text-align: center;">
+                            <i class="fas fa-check-circle" style="font-size: 4rem; color: #28a745; margin-bottom: 20px;"></i>
+                            <h2>Demande envoyée !</h2>
+                            <p>Votre requête sera traitée et un membre de notre équipe prendra contact avec vous dans les plus brefs délais.</p>
+                            <button class="cta-button" id="close-confirmation-modal-btn">Fermer</button>
+                        </div>
+                    </div>
+                    
+                    <div class="QDesrcpt animate-on-scroll">
+                        
+                        <!-- <h1><span class="primaire">Prensentation</span> du meilleur partenaire des acteurs du BTP!</h1> -->
+                        <div class="contentQDesrcpt">
+                            
+                            <div class="textsQD">
+                                <div class="">
+                                    <h2 class="primare"> Qui sommes-nous ? </h2>
+                                    <div class="bar1"></div>
+                                </div>
+                                <div class="contentTextQDesrcpt">
+                                    <div class="textQDesrcpt 1">
+                                        <svg aria-hidden="true" class="elementkit-infobox-icon e-font-icon-svg e-fas-check-double" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 174.8l-39.6-39.6c-9.4-9.4-24.6-9.4-33.9 0L192 374.7 80.6 263.2c-9.4-9.4-24.6-9.4-33.9 0L7 302.9c-9.4 9.4-9.4 24.6 0 34L175 505c9.4 9.4 24.6 9.4 33.9 0l296-296.2c9.4-9.5 9.4-24.7.1-34zm-324.3 106c6.2 6.3 16.4 6.3 22.6 0l208-208.2c6.2-6.3 6.2-16.4 0-22.6L366.1 4.7c-6.2-6.3-16.4-6.3-22.6 0L192 156.2l-55.4-55.5c-6.2-6.3-16.4-6.3-22.6 0L68.7 146c-6.2 6.3-6.2 16.4 0 22.6l112 112.2z"></path></svg>
+
+                                        <p>BENS GROUPE est une entreprise sénégalaise spécialisée dans le transport de conteneurs, la logistique sous douane et le négoce de matériaux de construction.</p>
+                                    </div>
+                                    <div class="textQDesrcpt 2">
+                                        <svg aria-hidden="true" class="elementkit-infobox-icon e-font-icon-svg e-fas-check-double" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 174.8l-39.6-39.6c-9.4-9.4-24.6-9.4-33.9 0L192 374.7 80.6 263.2c-9.4-9.4-24.6-9.4-33.9 0L7 302.9c-9.4 9.4-9.4 24.6 0 34L175 505c9.4 9.4 24.6 9.4 33.9 0l296-296.2c9.4-9.5 9.4-24.7.1-34zm-324.3 106c6.2 6.3 16.4 6.3 22.6 0l208-208.2c6.2-6.3 6.2-16.4 0-22.6L366.1 4.7c-6.2-6.3-16.4-6.3-22.6 0L192 156.2l-55.4-55.5c-6.2-6.3-16.4-6.3-22.6 0L68.7 146c-6.2 6.3-6.2 16.4 0 22.6l112 112.2z"></path></svg>
+
+                                        <p>Fondée par un professionnel issu du secteur bancaire en France, fort de plus de 20 ans d’expérience dans l’analyse des données, l’entreprise s’appuie sur une approche rigoureuse et orientée résultats, pour garantir fiabilité, transparence et efficacité dans chaque opération.</p>
+                                    </div>
+                                    <div class="textQDesrcpt 3">
+                                        <svg aria-hidden="true" class="elementkit-infobox-icon e-font-icon-svg e-fas-check-double" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 174.8l-39.6-39.6c-9.4-9.4-24.6-9.4-33.9 0L192 374.7 80.6 263.2c-9.4-9.4-24.6-9.4-33.9 0L7 302.9c-9.4 9.4-9.4 24.6 0 34L175 505c9.4 9.4 24.6 9.4 33.9 0l296-296.2c9.4-9.5 9.4-24.7.1-34zm-324.3 106c6.2 6.3 16.4 6.3 22.6 0l208-208.2c6.2-6.3 6.2-16.4 0-22.6L366.1 4.7c-6.2-6.3-16.4-6.3-22.6 0L192 156.2l-55.4-55.5c-6.2-6.3-16.4-6.3-22.6 0L68.7 146c-6.2 6.3-6.2 16.4 0 22.6l112 112.2z"></path></svg>
+                                        <p>Nous opérons principalement sur le corridor Dakar–Bamako, tout en intervenant sur l’ensemble des axes logistiques stratégiques d’Afrique de l’Ouest.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="illustrationQD">
+                                <img src="./assets/image/truck-3604096_1920.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission animate-on-scroll">
+                        <div class="contentMission">
+                            <h2 class="primaire">Notre mission</h2>
+                            <p>
+Simplifier la logistique de nos clients grâce à un service fiable et proactif
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="primaire animate-on-scroll" style="margin-top: 24px;">Nos valeurs</h2>
+                    <div class="valeurs extended ">
+                        <div class="blocsValeur animate-on-scroll">
+                            <div class="iconVal bgk1"><img src="./assets/svg/engagement.svg" alt="engagement"></div>
+                            <div class="valeur"><h3>Engagement</h3><p>nous tenons nos promesses et accompagnons chaque client jusqu’au bout de son opération, avec la volonté constante de bien faire.</p></div>
+                        </div>
+                        <div class="blocsValeur animate-on-scroll" style="transition-delay: 100ms;">
+                            <div class="iconVal bgk2"><img src="./assets/svg/fisble.svg" alt="Fiabilité"></div>
+                            <div class="valeur"><h3>Fiabilité</h3><p>  nous anticipons les imprévus et apportons des solutions concrètes et rapides pour garantir la continuité de vos activités.</p> </div>
+                        </div>
+                        <div class="blocsValeur animate-on-scroll" style="transition-delay: 200ms;">
+                            <div class="iconVal bgk2"><img src="./assets/svg/transparancyCercle.svg" alt="Transparence"></div>
+                            <div class="valeur"><h3>Transparence</h3><p> nous privilégions une relation claire, directe et fondée sur la confiance à chaque étape de la collaboration.</p> </div>
+                        </div>
+                    </div>
+                    <div class="valeurAjoute_vision animate-on-scroll">
+                        <div class="ilusttration_VA">
+                            <img src="./assets/svg/illustration_VA.svg" alt="Vision et Valeur Ajoutée">
+                        </div>
+                        <div class="valeurAjoute_vision_content">
+                            <span>
+                                <h2 class="primaire">Notre vision</h2>
+                                <p>
+Devenir le partenaire logistique de référence en Afrique de l’Ouest, en alliant expertise transport, partenaires solides et technologie connectée. <br>
+Nous portons une vision d’une logistique proactive et centrée sur le client, capable de s’adapter à chaque mission et d’évoluer avec les nouveaux enjeux du secteur.
+
+
+                                </p>
+                            </span>
+                            <span class="valeurAjoute">
+                                <h2 class="primaire">Notre valeur ajoutée</h2>
+                                <div class="valeurAjoute_text">
+                                    <!-- <ul>
+                                        <li>Une approche intégrée : transport, coordination logistique et négoce </li>
+                                        <li>Un seul interlocuteur, du point de chargement jusqu’à la livraison </li>
+                                        <li>Une équipe expérimentée, issue du terrain et proche de ses clients </li>
+                                        <li>Une capacité à anticiper et résoudre les imprévus logistiques </li>
+                                    </ul> -->
+
+                                    <p>
+                                        Nous proposons une approche intégrée, combinant transport et coordination logistique. <br>
+ Nos clients bénéficient d’un interlocuteur unique, d’une équipe expérimentée et d’une réactivité renforcée grâce à notre plateforme BENS NEXUS, qui facilite le suivi en temps réel et la gestion efficace des imprévus. <br>
+ <em><strong>Le sens du service, notre engagement au quotidien.</strong></em>
+
+                                    </p>
+                                   
+                                </div>
+                            </span>
+                            <!-- demender un devis -->
+                            <span >
+                                <button id="open-modal-btn-devis" class="cta-button open-modal-btn-devis-global" >Demander un devis</button>
+                            </span>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="stats-section animate-on-scroll">
+                <div class="bordeaux-accent accent-1"></div>
+                <div class="bordeaux-accent accent-2"></div>
+                
+                <div class="stats-container">
+                    <div class="stat-card animate-on-scroll">
+                        <div class="icon-container">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">11-50</div>
+                        <div class="stat-label">Employés</div>
+                    </div>
+                    
+                    <div class="stat-card animate-on-scroll" style="transition-delay: 100ms;">
+                        <div class="icon-container">
+                        <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Années d'expérience</div>
+                    </div>
+                    
+                    <div class="stat-card animate-on-scroll" style="transition-delay: 200ms;">
+                        <div class="icon-container">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="stat-number">Dakar-Bamako</div>
+                        <div class="stat-label">Itinéraire principal</div>
+                    </div>
+                    
+                    <div class="stat-card animate-on-scroll" style="transition-delay: 300ms;">
+                        <div class="icon-container">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <div class="stat-number">&lt;24h</div>
+                        <div class="stat-label">Devis</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Clients Section -->
+        <section class="clients-section" id="clients">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Ils nous font confiance</h2>
+                <div class="clients-grid ">
+                    <div class="client-logo animate-on-scroll">
+                        <img src="./assets/image/CEVA_Logistics_New_Logo.png" alt="CEVA Logistics">
+                    </div>
+                    <div class="client-logo animate-on-scroll" style="transition-delay: 100ms;">
+                        <img src="./assets/image/CMA-CGM.png" alt="CMA CGM">
+                    </div>
+                    <div class="client-logo animate-on-scroll" style="transition-delay: 200ms;">
+                        <img src="./assets/image/siamGroupe.jpeg" alt="Siam Group">
+                    </div>
+                    <div class="client-logo animate-on-scroll" style="transition-delay: 300ms;">
+                        <img src="./assets/image/Maersk_Group_Logo.svg.png" alt="Maersk">
+                    </div>
+                    <div class="client-logo animate-on-scroll" style="transition-delay: 400ms;">
+                        <img src="./assets/image/logo-Holding-GUEYE.png" alt="logo Holding GUEYE">
+                    </div>
+                    <div class="client-logo animate-on-scroll" style="transition-delay: 500ms;">
+                        <img src="./assets/image/transite-express.png" alt="Transite Express">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Demande de devis -->
+    <section class="devis-section">
+        <div class="container animate-on-scroll">
+            <h2 class="section-title">Demander un devis en ligne</h2>
+            <p class="section-description">Un projet ? Une demande urgente ? Recevez une réponse sous 24h avec une offre adaptée à vos besoins.</p>
+            <button id="open-modal-btn-devis" class="cta-button open-modal-btn-devis-global" >Demander un devis</button>
+        </div>
+    </section>
+
+   <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BENS GROUPE</h3>
+                    <p>Votre partenaire Transport & Négoc e BTP entre Dakar et Bamako.</p>
+                    <p>Le sens du service, notre engagement au quotidien.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Bensgroupes/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://sn.linkedin.com/company/bens-groupe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <a href="transport-logistique.html">Transport de conteneurs</a> 
+                        <br><a href="transport-logistique.html">Transport sous douane</a> 
+                        <br><a href="transport-logistique.html">Logistique export</a> 
+                        <br><a href="negoce-materiaux.html">Négoce matériaux BTP</a>
+                        <br><a href="transport-logistique.html">Coordination logistique</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <a href="index.html">Accueil</a> 
+                        <br><a href="transport-logistique.html">Services</a> 
+                        <br><a href="a-propos.html">À Propos</a> 
+                        <br><a href="index.html#clients">Clients</a> 
+                        <br><a href="index.html#contact-us">Contact</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i> <span>Mamelles BP 24511<br>Ouakam – SÉNÉGAL</span> 
+                        <br><i class="fas fa-phone"></i><a href="tel:+221331234567"><span>+221 33 123 45 67</span></a>  
+                        <br><i class="fab fa-whatsapp"></i><a href="https://wa.me/221766001902" target="_blank"><span>+221 76 600 19 02</span></a>  
+                        <br><i class="fas fa-envelope"></i><a href="mailto:contact@bensgroupe.com"><span>contact@bensgroupe.com</span></a>  
+                        <br><i class="fas fa-clock"></i> <span>Lun-Ven: 8h-18h</span> 
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 BENS GROUPE. Tous droits réservés. </p>
+                <p><a href="./mention.html" target="_blank" rel="noopener noreferrer">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/formulaireLogique.js" type="module"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/recaptcha-loader.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</body>
+</html>

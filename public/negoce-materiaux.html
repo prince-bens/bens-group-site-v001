@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Négoce de Matériaux - BENS Groupe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/negoce.css">
+    <link rel="stylesheet" href="./css/stats.css">
+    <link rel="stylesheet" href="./css/chatbot.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/chargement.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for the map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/general.css">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Négoce de Matériaux BTP - BENS Groupe" />
+    <meta name="description" content="BENS Groupe, PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction (ciment, fer à béton, gravier). Devis en moins de 24h." />
+    <meta name="keywords" content="transport Sénégal, transport Dakar Bamako, logistique Dakar, matériaux construction Sénégal, BENS Groupe, transport routier, commerce matériaux, ciment Sénégal, fer à béton, gravier, BTP Sénégal, transport conteneurs, transport conditionné" />
+    <meta name="author" content="BENS Groupe" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="SN" />
+    <meta name="geo.placename" content="Dakar, Sénégal" />
+    <meta name="geo.position" content="14.6928;-17.4467" />
+    <meta name="ICBM" content="14.6928, -17.4467" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bens-groupe.com/negoce-materiaux.html" />
+    <meta property="og:title" content="Négoce de Matériaux BTP - BENS Groupe" />
+    <meta property="og:description" content="PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction. Devis en moins de 24h." />
+    <meta property="og:image" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="BENS Groupe - Transport et logistique au Sénégal" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:secure_url" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="og:site_name" content="BENS Groupe" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bens-groupe.com/negoce-materiaux.html" />
+    <meta property="twitter:title" content="Négoce de Matériaux BTP - BENS Groupe" />
+    <meta property="twitter:description" content="PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction. Devis en moins de 24h." />
+    <meta property="twitter:image" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="twitter:image:alt" content="BENS Groupe - Transport et logistique au Sénégal" />
+    <meta property="twitter:creator" content="@bensgroupe" />
+    <meta property="twitter:site" content="@bensgroupe" />
+
+    <!-- Additional SEO Tags -->
+    <meta name="theme-color" content="#fff" />
+    <meta name="msapplication-TileColor" content="#a90505" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bens-groupe.com/negoce-materiaux.html" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="fr" href="https://bens-groupe.com/" />
+    <link rel="alternate" hreflang="fr-sn" href="https://bens-groupe.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://bens-groupe.com/" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/svg/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/svg/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/svg/favicon.svg" color="#a90505" />
+    <meta name="msapplication-TileImage" content="./assets/svg/favicon.svg" />
+</head>
+<body>
+    <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Discuter avec l'assistant</h3>
+            <span id="close-chatbot" class="close-chatbot">&times;</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">Bonjour ! Je suis l'assistant de Bens Groupe. Comment puis-je vous aider ?</div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="user-input" placeholder="Posez votre question...">
+            <button id="send-btn">Envoyer</button>
+        </div>
+    </div>
+    <div class="chatbot_icon" id="chatbot_icon">
+        <img src="./assets/svg/chat_icon.svg" alt="">
+    </div>
+    <div class="navbar-placeholder" id="navbar-placeholder">
+        <!-- La barre de navigation sera insérée ici par JavaScript -->
+    </div>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <img src="./assets/image/accueilP1.png" alt="chargement marchandise" class="imageHero">
+            <main class="hero-content">
+                <h1>Matériaux de construction</h1>
+                
+                <span class="cta">
+                    <a href="#market" id="open-modal-btn" class="cta-button" >Nos produits</a>
+                    <button class="cta-button2 open-modal-btn-devis-global">Demander un devis</button>
+                </span>
+            </main>
+        </section>
+        <section class="services">
+            <div class="bensNegoce" id="produits">
+                <div class="container">
+                    <div class="bensNegoceDescript">
+                        <h1 class="primaire">Une solution clé en main pour vos chantiers</h1>
+                        <span class="bar1"></span>
+                        <p style="margin-top: 1rem;">BENS GROUPE fournit aux professionnels du BTP et aux industriels des matériaux de construction fiables, disponibles et livrés à temps.
+                            <br>Grâce à notre double expertise en logistique et en négoce, nous proposons un service complet, de la commande à la livraison sur site.
+                        </p>
+                    </div>
+                     <!-- Presentation Section -->
+                    <div class="MargetIntro">
+                        <div class="">
+                            <h2 class="primaire">Une solution clé en main pour vos chantiers</h2>
+                            <p class="descrip1">Nous proposons une gamme de produits essentiels pour vos chantiers</p>
+                            
+                        </div>
+                    </div>
+                    <div class="market" id="market">
+                        <div class="cadreM ciment animate-on-scroll">
+                            <img src="./assets/image/ciment.jpg" alt="Ciment">
+                            <div class="info">
+                                <h4>Ciment</h4>
+                                <p>Avec nos partenaires locaux, nous mettons à votre disposition un large gamme de ciments</p>
+                                <!-- <div class="caracteristiques">
+                                    <span class="block">
+                                        <div class="c1 caracteristique"><span class="pointsOption"></span>Ciment Portland</div>
+                                        <div class="c2 caracteristique"><span class="pointsOption"></span>Qualité certifiée</div>
+                                    </span>
+                                    <span class="block">
+                                        <div class="c3 caracteristique"> <span class="pointsOption"></span>Partenaires locaux</div>
+                                        <div class="c4 caracteristique"> <span class="pointsOption"></span>Large gamme disponible</div>
+                                    </span>
+                                    
+                                </div> -->
+                                <div class="cta-button-container">
+                                    <button class="cta-button open-negoce-devis-btn" data-product="Ciment">Demander un devis</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cadreM Ferabéton animate-on-scroll" style="transition-delay: 100ms;">
+                            <img src="./assets/image/iron-2326791_1920.jpg" alt="Fer a béton">
+                            <div class="info">
+                                <h4>Fer a béton</h4>
+                                <p>Nous proposons du fer à béton local (FE400) et du fer à béton importé (FE500)</p>
+                                <!-- <div class="caracteristiques">
+                                    <span class="block">
+                                        <div class="c1 caracteristique"><span class="pointsOption"></span>Ciment Portland</div>
+                                        <div class="c2 caracteristique"><span class="pointsOption"></span>Qualité certifiée</div>
+                                    </span>
+                                    <span class="block">
+                                        <div class="c3 caracteristique"> <span class="pointsOption"></span>Partenaires locaux</div>
+                                        <div class="c4 caracteristique"> <span class="pointsOption"></span>Large gamme disponible</div>
+                                    </span>
+                                    
+                                </div> -->
+                                <div class="cta-button-container">
+                                    <button class="cta-button open-negoce-devis-btn" data-product="Fer a béton">Demander un devis</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cadreM Gravier animate-on-scroll" style="transition-delay: 200ms;">
+                            <img src="./assets/image/gravel-plant-2698868_1920.jpg" alt="Gravier">
+                            <div class="info">
+                                <h4>Gravier</h4>
+                                <p>Nous mettons à votre disposition du Gravier basalte et calcaire</p>
+                                <!-- <div class="caracteristiques">
+                                    <span class="block">
+                                        <div class="c1 caracteristique"><span class="pointsOption"></span>Ciment Portland</div>
+                                        <div class="c2 caracteristique"><span class="pointsOption"></span>Qualité certifiée</div>
+                                    </span>
+                                    <span class="block">
+                                        <div class="c3 caracteristique"> <span class="pointsOption"></span>Partenaires locaux</div>
+                                        <div class="c4 caracteristique"> <span class="pointsOption"></span>Large gamme disponible</div>
+                                    </span>
+                                    
+                                </div> -->
+                                <div class="cta-button-container">
+                                    <button class="cta-button open-negoce-devis-btn" data-product="Gravier">Demander un devis</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cadreM Autre animate-on-scroll" style="transition-delay: 200ms;">
+                            <img src="./assets/image/venteDiver.jpg" alt="Autres materiaux">
+                            <div class="info">
+                                <h4>Autres materiaux</h4>
+                                <p>Autres matériaux à la demande (tôles, bois, etc.) </p>
+                                
+                                <!-- <div class="caracteristiques">
+                                    <span class="block">
+                                        <div class="c1 caracteristique"><span class="pointsOption"></span>Ciment Portland</div>
+                                        <div class="c2 
+                                        caracteristique"><span class="pointsOption"></span>Qualité certifiée</div>
+                                    </span>
+                                    <span class="block">
+                                        <div class="c3 caracteristique"> <span class="pointsOption"></span>Partenaires locaux</div>
+                                        <div class="c4 caracteristique"> <span class="pointsOption"></span>Large gamme disponible</div>
+                                    </span>
+                                    
+                                </div> -->
+                                <div class="cta-button-container">
+                                    <button class="cta-button open-negoce-devis-btn" data-product="Autres">Demander un devis</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="garantie-section">
+            <div class="container">
+                <div class="illustration">
+                    <img src="./assets/image/fiabble.jpeg" alt="Illustration de la garantie">
+                </div>
+                <div class="garantie-content animate-on-scroll">
+                    <div class="garantie-text">
+                        <h2 class="primaire">Livraison fiable et qualité garantie</h2>
+                        <p>Nous assurons une livraison rapide et maîtrisée, tout en garantissant la qualité des matériaux proposés.</p>
+                    </div>
+                    <div class="garantie-list">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Livraison sur chantier ou en dépôt</li>
+                            <li><i class="fas fa-check-circle"></i> Réseau de transport interne optimisé</li>
+                            <li><i class="fas fa-check-circle"></i> Visibilité sur les délais</li>
+                            <li><i class="fas fa-check-circle"></i> Stock suivi et contrôlé</li>
+                            <li><i class="fas fa-check-circle"></i> Un seul interlocuteur pour toute la chaîne</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Demande de devis -->
+    <section class="devis-section">
+        <div class="container animate-on-scroll">
+            <h2 class="section-title">Demander un devis en ligne</h2>
+            <p class="section-description">Un projet ? Une demande urgente ? Recevez une réponse sous 24h avec une offre adaptée à vos besoins.</p>
+            <button id="open-modal-btn-devis" class="cta-button open-modal-btn-devis-global" >Demander un devis</button>
+        </div>
+    </section>
+        
+    </main>
+
+    <div id="devis-negoce-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn-negoce">&times;</span>
+            <h2>Demande de devis</h2>
+            <form id="devis-negoce-form">
+                <div class="form-group">
+                    <label for="devis-product">Produit</label>
+                    <input type="text" id="devis-product" name="product" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="devis-quantity">Quantité (en tonnes, barres, etc.)</label>
+                    <input type="text" id="devis-quantity" name="quantity" placeholder="Ex: 10 tonnes" required>
+                </div>
+                <div class="form-group" id="devis-quality-options">
+                </div>
+                <div class="form-group">
+                    <label for="devis-contact">Contact (Email ou Téléphone)</label>
+                    <input type="text" id="devis-contact" name="contact" placeholder="votre@email.com ou +221 77..." required>
+                </div>
+                <div class="form-group"> 
+                    <div id="recaptcha-widget" class="g-recaptcha" 
+                        data-sitekey="6Lctic8rAAAAADDTmkjZ2fXqVb5e2w1vefpV5pDX"
+                        data-callback="onRecaptchaSuccess"
+                        data-expired-callback="onRecaptchaExpired">
+                    </div>
+                </div>
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="devis-livraison" name="livraison">
+                    <label for="devis-livraison">Je souhaite une livraison directe sur mon chantier.</label>
+                </div>
+                <button type="submit" class="cta-button">Envoyer la demande</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Fenêtre Modale de Confirmation de Devis -->
+    <div id="devis-confirmation-modal" class="modal">
+        <div class="modal-content" style="text-align: center;">
+            <i class="fas fa-check-circle" style="font-size: 4rem; color: #28a745; margin-bottom: 20px;"></i>
+            <h2>Demande envoyée !</h2>
+            <p>Votre requête sera traitée et un membre de notre équipe prendra contact avec vous dans les plus brefs délais.</p>
+            <button class="cta-button" id="close-confirmation-modal-btn">Fermer</button>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BENS GROUPE</h3>
+                    <p>Votre partenaire Transport & Négoc e BTP entre Dakar et Bamako.</p>
+                    <p>Le sens du service, notre engagement au quotidien.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Bensgroupes/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://sn.linkedin.com/company/bens-groupe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <a href="transport-logistique.html">Transport de conteneurs</a> 
+                        <br><a href="transport-logistique.html">Transport sous douane</a> 
+                        <br><a href="transport-logistique.html">Logistique export</a> 
+                        <br><a href="negoce-materiaux.html">Négoce matériaux BTP</a>
+                        <br><a href="transport-logistique.html">Coordination logistique</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <a href="index.html">Accueil</a> 
+                        <br><a href="transport-logistique.html">Services</a> 
+                        <br><a href="a-propos.html">À Propos</a> 
+                        <br><a href="index.html#clients">Clients</a> 
+                        <br><a href="index.html#contact-us">Contact</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i> <span>Mamelles BP 24511<br>Ouakam – SÉNÉGAL</span> 
+                        <br><i class="fas fa-phone"></i><a href="tel:+221331234567"><span>+221 33 123 45 67</span></a>  
+                        <br><i class="fab fa-whatsapp"></i><a href="https://wa.me/221766001902" target="_blank"><span>+221 76 600 19 02</span></a>  
+                        <br><i class="fas fa-envelope"></i><a href="mailto:contact@bensgroupe.com"><span>contact@bensgroupe.com</span></a>  
+                        <br><i class="fas fa-clock"></i> <span>Lun-Ven: 8h-18h</span> 
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 BENS GROUPE. Tous droits réservés. </p>
+                <p><a href="./mention.html" target="_blank" rel="noopener noreferrer">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/formulaireLogique.js" type="module"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/recaptcha-loader.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</body>
+</html>

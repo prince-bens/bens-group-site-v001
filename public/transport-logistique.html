@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport & Logistique - BENS Groupe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/transport_logistique.css">
+    <link rel="stylesheet" href="./css/chatbot.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/chargement.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for the map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/general.css">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Transport & Logistique - BENS Groupe" />
+    <meta name="description" content="BENS Groupe, PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction (ciment, fer à béton, gravier). Devis en moins de 24h." />
+    <meta name="keywords" content="transport Sénégal, transport Dakar Bamako, logistique Dakar, matériaux construction Sénégal, BENS Groupe, transport routier, commerce matériaux, ciment Sénégal, fer à béton, gravier, BTP Sénégal, transport conteneurs, transport conditionné" />
+    <meta name="author" content="BENS Groupe" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="SN" />
+    <meta name="geo.placename" content="Dakar, Sénégal" />
+    <meta name="geo.position" content="14.6928;-17.4467" />
+    <meta name="ICBM" content="14.6928, -17.4467" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bens-groupe.com/transport-logistique.html" />
+    <meta property="og:title" content="Transport & Logistique - BENS Groupe" />
+    <meta property="og:description" content="PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction. Devis en moins de 24h." />
+    <meta property="og:image" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="BENS Groupe - Transport et logistique au Sénégal" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:secure_url" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="og:site_name" content="BENS Groupe" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bens-groupe.com/transport-logistique.html" />
+    <meta property="twitter:title" content="Transport & Logistique - BENS Groupe" />
+    <meta property="twitter:description" content="PME sénégalaise spécialisée dans le transport routier Dakar-Bamako, la logistique et le commerce de matériaux de construction. Devis en moins de 24h." />
+    <meta property="twitter:image" content="https://bens-groupe.com/assets/image/Preview.png" />
+    <meta property="twitter:image:alt" content="BENS Groupe - Transport et logistique au Sénégal" />
+    <meta property="twitter:creator" content="@bensgroupe" />
+    <meta property="twitter:site" content="@bensgroupe" />
+
+    <!-- Additional SEO Tags -->
+    <meta name="theme-color" content="#fff" />
+    <meta name="msapplication-TileColor" content="#a90505" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bens-groupe.com/transport-logistique.html" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="fr" href="https://bens-groupe.com/" />
+    <link rel="alternate" hreflang="fr-sn" href="https://bens-groupe.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://bens-groupe.com/" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/svg/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/svg/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/svg/favicon.svg" color="#a90505" />
+    <meta name="msapplication-TileImage" content="./assets/svg/favicon.svg" />
+</head>
+<body>
+    <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Discuter avec l'assistant</h3>
+            <span id="close-chatbot" class="close-chatbot">&times;</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">Bonjour ! Je suis l'assistant de Bens Groupe. Comment puis-je vous aider ?</div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="user-input" placeholder="Posez votre question...">
+            <button id="send-btn">Envoyer</button>
+        </div>
+    </div>
+        <div id="tracking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Identifier votre livraison</h2>
+            <p>Veuillez entrer les informations ci-dessous pour commencer le suivi.</p>
+            <form id="tracking-form">
+                <div class="form-group">
+                    <label for="order-id">Numéro de commande</label>
+                    <input type="text" id="order-id" name="order-id" placeholder="Ex: A2B4-5678" required>
+                </div>
+                <button type="submit"  class="cta-button">Afficher sur la carte</button>
+                <div id="spinner" class="hidden">
+                    <div class="spinner"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="chatbot_icon" id="chatbot_icon">
+        <img src="./assets/svg/chat_icon.svg" alt="">
+    </div>
+    <div class="navbar-placeholder" id="navbar-placeholder">
+        <!-- La barre de navigation sera insérée ici par JavaScript -->
+    </div>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            
+            <img src="./assets/image/IMG_2506.JPG"  alt="chargement marchandise" class="imageHero">
+            <div class="hero-content">
+                <h1> Transport & Logistique</h1>
+                <span class="cta">
+                    <button id="open-modal-btn" class="cta-button">Suivre ma commande</button>
+                    <a href="./dashboard" class="cta-button3">Espace client</a>
+                </span>
+            </div>
+        </section>
+        <section class="services" id="services">
+            
+            <div class="miniIntro">
+                <h1 class="primaire UneExpertise">Des solutions adaptées à chaque type de marchandise et de client</h1>
+                <div class="bar1"></div>
+                <span class="description" >
+                    Chez BENS GROUPE, nous sommes avant tout des transporteurs.
+                    Notre expérience du terrain, combinée à un réseau solide de partenaires et à notre plateforme digitale BENS NEXUS, nous permet d’offrir à chaque client une solution sur mesure, du port à la livraison finale, avec un suivi en temps réel et une transparence totale.
+                    <br> <br>
+                    
+                </span>
+            </div>
+            <div class="ApprocheContenair">
+
+                <h2>Notre approche repose sur trois piliers </h2>
+                <div class="bar1"></div>
+                <div class="composants animate-on-scroll">
+                        <div class="cadreBT">
+                            <img src="./assets/image/truck-3604096_1920.jpg" alt="truck">
+                            <p>La maîtrise du transport</p>
+                        </div>
+                        <div class="cadreBT">
+                            <img src="./assets/image/suiviGPS.png" alt="gps">
+                            <p>La force du réseau</p>
+                        </div>
+                        <div class="cadreBT">
+                            <img src="./assets/image/port-1845350_1920.jpg" alt=" port">
+                            <p>La puissance du digital</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="Troispiliers">
+                    <div class="conteneuMission">
+                        <div class="mission 1">
+                            <div class="illurtation">
+                                <img src="./assets/svg/truck.svg" alt="truck">
+                                <p class="numIlu">01</p>
+                            </div>
+                            <h3>La maîtrise du transport</h3>
+                            <p>
+                                La Commission est chargée de gérer efficacement les crédits alloués par les autorités aux étudiants, en veillant à leur bonne répartition et à leur utilisation optimale.
+                            </p>
+                            <a href="#Transport_sous_douane" class="more">
+                                En savoir plus
+                            </a>
+                        </div>
+                        <div class="mission 2">
+                            <div class="illurtation">
+                                <img src="./assets/svg/reseau.svg" alt="reseau">
+                                <p class="numIlu">02</p>
+                            </div>
+                            <h3>La force du réseau</h3>
+                            <p>
+                                Elle met en œuvre des actions concrètes pour améliorer les conditions de vie des étudiants, qu’il s’agisse de logement, de santé, de restauration ou d’autres besoins sociaux.
+                            </p>
+                            <a href="./index.html#clients" class="more">
+                                En savoir plus
+                            </a>
+                        </div>
+                        <div class="mission 3">
+                            <div class="illurtation">
+                                <img src="./assets/svg/digital.svg" alt="digital">
+                                <p class="numIlu">03</p>
+                            </div>
+                            <h3>La puissance du digital</h3>
+                            <p>
+                                La Commission accompagne et soutient les initiatives des étudiants, ainsi que celles des organismes poursuivant des objectifs analogues ou complémentaires.
+                            </p>
+                            <a href="./PresentationNexus.html" class="more">
+                                En savoir plus
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="bensTransport">
+                <!-- <div class="titreAccoladeContenaire">
+                    <div class="titreAccolade animate-on-scroll"><span></span> Nos services transport <span></span></div>
+                </div> -->
+                <h2 class="primaire">Des solutions adaptées à chaque type de marchandise et de client.</h2>
+                <div class="etapesSection">
+                    <div class="etapes etapes1 animate-on-scroll" >
+                        <div class="imageetapes">
+                            <img src="./assets/svg/imageetapes.svg" alt="Image des étapes">
+                        </div>
+                        <div class="etapesContenaires">
+                            <div class="enumeration" id="Transport_sous_douane">
+                                <h2>Transport sous douane et domestique</h2>
+                                <span class="p1">Nous assurons le transport sous douane de conteneurs (20’, 40’, 45’), de marchandises conditionnées (palettes, caisses, sacs) ou en vrac, avec un haut niveau de sécurité, de fiabilité et de traçabilité.
+                                    <div class="valeurAjoute_Liste">
+                                        <ul class="enum">
+                                            <li>Corridor Dakar → Bamako et sous-région (Sénégal, Mali…)</li>
+                                            <li>Prise en charge complète : du port au site ou au chantier</li>
+                                            <li>Transport sécurisé et conforme aux exigences douanières</li>
+                                            <li>Suivi GPS en direct via BENS NEXUS</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="etapes etapes2 animate-on-scroll" >
+                        
+                        <div class="etapesContenaires" >
+                            <div class="enumeration">
+                                
+                                <h2>Positionnement et logistique export</h2>
+                                <span class="p2" >
+                                    Nous réalisons le positionnement à l’export des conteneurs ou marchandises, notamment pour les campagnes agricoles, avec coordination des chargements et retour portuaire.
+                                    <ul class="enum">
+                                        <li>Positionnement conteneurs ou vrac export</li>
+                                        <li>Coordination des chargements et formalités</li>
+                                        <li>Retour portuaire optimisé</li>
+                                        <li>Réduction des délais et maîtrise des coûts</li>
+                                    
+                                    </ul>
+                                </span> 
+                                
+                            </div>
+                        </div>
+                        <div class="imageetapes">
+                            <img src="./assets/svg/etapes2.svg" alt="Image des étapes">
+                        </div>
+                    </div>
+                    <div class="etapes etapes3 animate-on-scroll" >
+                        <div class="imageetapes">
+                            <img src="./assets/svg/serviceAssistan.svg" alt="Image des étapes">
+                        </div>
+                        <div class="etapesContenaires" >
+                            <div class="enumeration">
+                                <h2>Suivi, coordination et service client</h2>
+                                <span class="p3" >
+                                    Un accompagnement personnalisé et un suivi en temps réel grâce à nos outils connectés et notre équipe dédiée.
+                                    <ul class="enum">
+                                        <li>Suivi GPS en temps réel</li>
+                                        <li>Gestion proactive des imprévus (pannes, retards, planning)</li>
+                                        <li>Service client réactif et unique interlocuteur</li>
+                                        <li>Transparence et communication continue</li> 
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="distingue">
+                    <div class="titreDistingue">
+
+                        <h2 class="primaire">Ce qui nous distingue</h2>
+                        <div class="bar1"></div>
+                    </div>
+                    <div class="distingueContente">
+                        <div class="illustration animate-on-scroll">
+                            <img src="./assets/svg/distingIllustration.svg" alt=" Illustration">
+                        </div>
+                        <div class="distingueTexte animate-on-scroll">
+                            <img src="./assets/svg/guyomet.svg" alt="">
+                            <p>Chez BENS GROUPE, nous ne sommes pas une simple plateforme numérique :
+                                nous sommes des transporteurs présents sur le terrain, soutenus par un réseau de partenaires fiables et par une technologie de pointe.
+                                Cette combinaison unique nous permet d’offrir une logistique fluide, sécurisée et connectée, à la hauteur des exigences des entreprises de la sous-région.
+                                Choisir BENS GROUPE, c’est opter pour :
+                                <ul class="enum">
+                                    <li>un transporteur expérimenté, ancré sur le corridor Dakar–Bamako,</li>
+                                    <li>un réseau de partenaires de confiance, partageant nos valeurs d’exigence et de transparence,</li>
+                                    <li>une plateforme digitale BENS NEXUS qui garantit un suivi en temps réel et une visibilité complète sur chaque opération.</li>
+                                </ul>
+                                BENS TRANSPORT, la fiabilité du terrain renforcée par la technologie.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="engagements">
+                    <div class="engagementsContente">
+                        <div class="description animate-on-scroll">
+                            <h2>Nos engagements transport</h2>
+                            <div class="bar1"></div>
+                            <p>Chez BENS GROUPE, chaque opération de transport est menée avec la même exigence :
+                                celle d’un service fiable, sécurisé et transparent du début à la fin.
+                                Nos engagements reposent sur trois principes essentiels 
+                                :
+                                <ul class="enum">
+                                    <li>Engagement : nous tenons nos promesses et accompagnons chaque client jusqu’au bout de son opération, avec exigence et sens du service.</li>
+                                    <li>Transparence : nous favorisons une relation claire, directe et responsable, fondée sur la confiance et la communication ouverte.</li>
+                                    <li>Proactivité : nous anticipons les besoins et les imprévus pour offrir des solutions rapides, efficaces et connectées grâce à une organisation réactive.</li>
+                                </ul>
+                                Parce qu’au-delà du transport, nous faisons du service une promesse tenue.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            
+            </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BENS GROUPE</h3>
+                    <p>Votre partenaire Transport & Négoc e BTP entre Dakar et Bamako.</p>
+                    <p>Le sens du service, notre engagement au quotidien.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Bensgroupes/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://sn.linkedin.com/company/bens-groupe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <a href="transport-logistique.html">Transport de conteneurs</a> 
+                        <br><a href="transport-logistique.html">Transport sous douane</a> 
+                        <br><a href="transport-logistique.html">Logistique export</a> 
+                        <br><a href="negoce-materiaux.html">Négoce matériaux BTP</a>
+                        <br><a href="transport-logistique.html">Coordination logistique</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <a href="index.html">Accueil</a> 
+                        <br><a href="transport-logistique.html">Services</a> 
+                        <br><a href="a-propos.html">À Propos</a> 
+                        <br><a href="index.html#clients">Clients</a> 
+                        <br><a href="index.html#contact-us">Contact</a> 
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i> <span>Mamelles BP 24511<br>Ouakam – SÉNÉGAL</span> 
+                        <br><i class="fas fa-phone"></i><a href="tel:+221331234567"><span>+221 33 123 45 67</span></a>  
+                        <br><i class="fab fa-whatsapp"></i><a href="https://wa.me/221766001902" target="_blank"><span>+221 76 600 19 02</span></a>  
+                        <br><i class="fas fa-envelope"></i><a href="mailto:contact@bensgroupe.com"><span>contact@bensgroupe.com</span></a>  
+                        <br><i class="fas fa-clock"></i> <span>Lun-Ven: 8h-18h</span> 
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 BENS GROUPE. Tous droits réservés. </p>
+                <p><a href="./mention.html" target="_blank" rel="noopener noreferrer">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/formulaireLogique.js" type="module"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/logiqueIndex.js" type="module"></script>
+
+    <script src="js/animations.js"></script>
+    <script src="js/recaptcha-loader.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</body>
+</html>
