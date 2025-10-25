@@ -104,7 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // 1. Filtre par terme de recherche
             const searchFields = {
                 refLigne: trip.Ref_Ligne_Transport?.toLowerCase() || '',
-                refLigne: trip.ID_Ligne_Transport?.toLowerCase() || '',
+                ID_Ligne_Transport: trip.ID_Ligne_Transport?.toLowerCase() || '',
+                Tracteur: trip.Tracteur?.toLowerCase() || '',
+                Driver_Phone: trip.Driver_Phone?.toLowerCase() || '',
                 lieuChargement: trip.Lieu_Chargement?.toLowerCase() || '',
                 lieuDechargement: trip.Lieu_Dechargement?.toLowerCase() || '',
                 refConteneur: trip.Ref_Conteneur?.toLowerCase() || '',

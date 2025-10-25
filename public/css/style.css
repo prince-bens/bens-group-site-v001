@@ -98,7 +98,8 @@ section{
 /* Contenu principal */
 .hero-content {
     z-index: 5;
-    max-width: 650px;
+    min-width: 80vw;
+    max-width: 750px;
 }
 
 .hero-content h1 {

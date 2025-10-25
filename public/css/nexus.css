@@ -22,7 +22,7 @@ section {
 }
 
 .section-title p {
-    color: #555;
+    color: #000000;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -61,7 +61,7 @@ section {
 .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: #000000
 }
 
 .cta-button {
@@ -158,7 +158,7 @@ section {
     height: 250px;
     background-image: url('../assets/image/AppPreviewDesktop.png');
     /* Fallback au cas où l'image ne charge pas */
-    background-color: #555;
+    background-color: #000000
 }
 
 .device-desktop::after {
@@ -180,7 +180,7 @@ section {
     border-radius: 15px;
     background-image: url('../assets/image/AppPreviewMobile.png');
     /* Fallback au cas où l'image ne charge pas */
-    background-color: #555;
+    background-color: #000000
 }
 
 /* ======== SECTION INTRODUCTION ======== */
@@ -197,7 +197,7 @@ section {
 .intro-content p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #000000;
 }
 
 /* ======== SECTION POURQUOI ======== */
@@ -212,7 +212,7 @@ section {
 
 .pourquoi-content p {
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #000000
 }
 
 .benefits {
@@ -305,7 +305,7 @@ section {
 .relation-content p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #000000;
 }
 
 /* ======== SECTION PROMESSE ======== */
@@ -320,18 +320,18 @@ section {
 
 .promesse-content p {
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #000000;
 }
 
 .values {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
     justify-content: space-between;
     margin-top: 2rem;
 }
 
 .value {
-    flex: 0 0 calc(50% - 20px);
     background: rgba(255, 0, 0, 0.006);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.151);
     padding: 1.5rem;
