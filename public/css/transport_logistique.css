@@ -61,11 +61,11 @@
     max-width: 1500px;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .enteteTransport{
         
     }
-}
+} */
 
 /*********************************** content aproche  ********************************/
 .ApprocheContenair{
