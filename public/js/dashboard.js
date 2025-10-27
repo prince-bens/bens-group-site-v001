@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function createTripCard(trip) {
         const cardLink = document.createElement('a');
-        cardLink.href = `/livraison/${trip.id}`;
+        cardLink.href = `/livraison/${trip.ID_Ligne_Transport}`;
         cardLink.className = 'trip-card';
 
         // Create elements for the card content

@@ -161,7 +161,7 @@ function getUserPosition() {
 }
 
 function updateUI(deliveryData) {
-    const deliveryName = `Identifiant: ${deliveryData.ID_Ligne_Transport || idLigneTransport}`;
+    const deliveryName = `Ref Mission: ${deliveryData.ID_Ligne_Transport || idLigneTransport}`;
     document.querySelectorAll('.nom').forEach(el => el.textContent = deliveryName);
     document.querySelectorAll('.Ref_Ligne_Transport').forEach(el => el.textContent = `${deliveryData.Ref_Ligne_Transport || 'N/A'}`);
     

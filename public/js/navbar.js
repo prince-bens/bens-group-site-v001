@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = [
         { href: 'index.html', text: 'ACCUEIL' },
         { href: 'transport-logistique.html', text: 'BENS TRANSPORT' },
-        { href: 'negoce-materiaux.html', text: 'BENS NÉGOCE' },
+        { href: 'negoce-materiaux.html', text: 'BENS NEGOCE' },
         { href: 'PresentationNexus.html', text: 'BENS NEXUS' },
         { href: 'a-propos.html', text: 'À PROPOS' },
         // { href: 'index.html#contact-us', text: 'Contact' }
