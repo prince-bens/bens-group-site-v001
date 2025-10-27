@@ -126,10 +126,12 @@ section{
     gap: 20px;
     margin-top: 20px;
     justify-content: center;
-
     width: 95%;
     max-width: 800px;
+}
 
+.hero-content .buttons-hero{
+    max-width: 500px;
 }
 
 .cta-button3, .cta-button2, .cta-button {
